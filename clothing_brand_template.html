@@ -1,0 +1,244 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>i2i.CSS Template</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Roboto">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<style>
+.i2i-sidebar a {font-family: "Roboto", sans-serif}
+body,h1,h2,h3,h4,h5,h6,.i2i-wide {font-family: "Montserrat", sans-serif;}
+</style>
+</head>
+<body class="i2i-content" style="max-width:1200px">
+
+<!-- Sidebar/menu -->
+<nav class="i2i-sidebar i2i-bar-block i2i-white i2i-collapse i2i-top" style="z-index:3;width:250px" id="mySidebar">
+  <div class="i2i-container i2i-display-container i2i-padding-16">
+    <i onclick="i2i_close()" class="fa fa-remove i2i-hide-large i2i-button i2i-display-topright"></i>
+    <h3 class="i2i-wide"><b>LOGO</b></h3>
+  </div>
+  <div class="i2i-padding-64 i2i-large i2i-text-grey" style="font-weight:bold">
+    <a href="#" class="i2i-bar-item i2i-button">Shirts</a>
+    <a href="#" class="i2i-bar-item i2i-button">Dresses</a>
+    <a onclick="myAccFunc()" href="javascript:void(0)" class="i2i-button i2i-block i2i-white i2i-left-align" id="myBtn">
+      Jeans <i class="fa fa-caret-down"></i>
+    </a>
+    <div id="demoAcc" class="i2i-bar-block i2i-hide i2i-padding-large i2i-medium">
+      <a href="#" class="i2i-bar-item i2i-button i2i-light-grey"><i class="fa fa-caret-right i2i-margin-right"></i>Skinny</a>
+      <a href="#" class="i2i-bar-item i2i-button">Relaxed</a>
+      <a href="#" class="i2i-bar-item i2i-button">Bootcut</a>
+      <a href="#" class="i2i-bar-item i2i-button">Straight</a>
+    </div>
+    <a href="#" class="i2i-bar-item i2i-button">Jackets</a>
+    <a href="#" class="i2i-bar-item i2i-button">Gymwear</a>
+    <a href="#" class="i2i-bar-item i2i-button">Blazers</a>
+    <a href="#" class="i2i-bar-item i2i-button">Shoes</a>
+  </div>
+  <a href="#footer" class="i2i-bar-item i2i-button i2i-padding">Contact</a> 
+  <a href="javascript:void(0)" class="i2i-bar-item i2i-button i2i-padding" onclick="document.getElementById('newsletter').style.display='block'">Newsletter</a> 
+  <a href="#footer"  class="i2i-bar-item i2i-button i2i-padding">Subscribe</a>
+</nav>
+
+<!-- Top menu on small screens -->
+<header class="i2i-bar i2i-top i2i-hide-large i2i-black i2i-xlarge">
+  <div class="i2i-bar-item i2i-padding-24 i2i-wide">LOGO</div>
+  <a href="javascript:void(0)" class="i2i-bar-item i2i-button i2i-padding-24 i2i-right" onclick="i2i_open()"><i class="fa fa-bars"></i></a>
+</header>
+
+<!-- Overlay effect when opening sidebar on small screens -->
+<div class="i2i-overlay i2i-hide-large" onclick="i2i_close()" style="cursor:pointer" title="close side menu" id="myOverlay"></div>
+
+<!-- !PAGE CONTENT! -->
+<div class="i2i-main" style="margin-left:250px">
+
+  <!-- Push down content on small screens -->
+  <div class="i2i-hide-large" style="margin-top:83px"></div>
+  
+  <!-- Top header -->
+  <header class="i2i-container i2i-xlarge">
+    <p class="i2i-left">Jeans</p>
+    <p class="i2i-right">
+      <i class="fa fa-shopping-cart i2i-margin-right"></i>
+      <i class="fa fa-search"></i>
+    </p>
+  </header>
+
+  <!-- Image header -->
+  <div class="i2i-display-container i2i-container">
+    <img src="/i2iimages/jeans.jpg" alt="Jeans" style="width:100%">
+    <div class="i2i-display-topleft i2i-text-white" style="padding:24px 48px">
+      <h1 class="i2i-jumbo i2i-hide-small">New arrivals</h1>
+      <h1 class="i2i-hide-large i2i-hide-medium">New arrivals</h1>
+      <h1 class="i2i-hide-small">COLLECTION 2016</h1>
+      <p><a href="#jeans" class="i2i-button i2i-black i2i-padding-large i2i-large">SHOP NOW</a></p>
+    </div>
+  </div>
+
+  <div class="i2i-container i2i-text-grey" id="jeans">
+    <p>8 items</p>
+  </div>
+
+  <!-- Product grid -->
+  <div class="i2i-row i2i-grayscale">
+    <div class="i2i-col l3 s6">
+      <div class="i2i-container">
+        <img src="/i2iimages/jeans1.jpg" style="width:100%">
+        <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
+      </div>
+      <div class="i2i-container">
+        <img src="/i2iimages/jeans2.jpg" style="width:100%">
+        <p>Mega Ripped Jeans<br><b>$19.99</b></p>
+      </div>
+    </div>
+
+    <div class="i2i-col l3 s6">
+      <div class="i2i-container">
+        <div class="i2i-display-container">
+          <img src="/i2iimages/jeans2.jpg" style="width:100%">
+          <span class="i2i-tag i2i-display-topleft">New</span>
+          <div class="i2i-display-middle i2i-display-hover">
+            <button class="i2i-button i2i-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Mega Ripped Jeans<br><b>$19.99</b></p>
+      </div>
+      <div class="i2i-container">
+        <img src="/i2iimages/jeans3.jpg" style="width:100%">
+        <p>Washed Skinny Jeans<br><b>$20.50</b></p>
+      </div>
+    </div>
+
+    <div class="i2i-col l3 s6">
+      <div class="i2i-container">
+        <img src="/i2iimages/jeans3.jpg" style="width:100%">
+        <p>Washed Skinny Jeans<br><b>$20.50</b></p>
+      </div>
+      <div class="i2i-container">
+        <div class="i2i-display-container">
+          <img src="/i2iimages/jeans4.jpg" style="width:100%">
+          <span class="i2i-tag i2i-display-topleft">Sale</span>
+          <div class="i2i-display-middle i2i-display-hover">
+            <button class="i2i-button i2i-black">Buy now <i class="fa fa-shopping-cart"></i></button>
+          </div>
+        </div>
+        <p>Vintage Skinny Jeans<br><b class="i2i-text-red">$14.99</b></p>
+      </div>
+    </div>
+
+    <div class="i2i-col l3 s6">
+      <div class="i2i-container">
+        <img src="/i2iimages/jeans4.jpg" style="width:100%">
+        <p>Vintage Skinny Jeans<br><b>$14.99</b></p>
+      </div>
+      <div class="i2i-container">
+        <img src="/i2iimages/jeans1.jpg" style="width:100%">
+        <p>Ripped Skinny Jeans<br><b>$24.99</b></p>
+      </div>
+    </div>
+  </div>
+
+  <!-- Subscribe section -->
+  <div class="i2i-container i2i-black i2i-padding-32">
+    <h1>Subscribe</h1>
+    <p>To get special offers and VIP treatment:</p>
+    <p><input class="i2i-input i2i-border" type="text" placeholder="Enter e-mail" style="width:100%"></p>
+    <button type="button" class="i2i-button i2i-red i2i-margin-bottom">Subscribe</button>
+  </div>
+  
+  <!-- Footer -->
+  <footer class="i2i-padding-64 i2i-light-grey i2i-small i2i-center" id="footer">
+    <div class="i2i-row-padding">
+      <div class="i2i-col s4">
+        <h4>Contact</h4>
+        <p>Questions? Go ahead.</p>
+        <form action="/action_page.php" target="_blank">
+          <p><input class="i2i-input i2i-border" type="text" placeholder="Name" name="Name" required></p>
+          <p><input class="i2i-input i2i-border" type="text" placeholder="Email" name="Email" required></p>
+          <p><input class="i2i-input i2i-border" type="text" placeholder="Subject" name="Subject" required></p>
+          <p><input class="i2i-input i2i-border" type="text" placeholder="Message" name="Message" required></p>
+          <button type="submit" class="i2i-button i2i-block i2i-black">Send</button>
+        </form>
+      </div>
+
+      <div class="i2i-col s4">
+        <h4>About</h4>
+        <p><a href="#">About us</a></p>
+        <p><a href="#">We're hiring</a></p>
+        <p><a href="#">Support</a></p>
+        <p><a href="#">Find store</a></p>
+        <p><a href="#">Shipment</a></p>
+        <p><a href="#">Payment</a></p>
+        <p><a href="#">Gift card</a></p>
+        <p><a href="#">Return</a></p>
+        <p><a href="#">Help</a></p>
+      </div>
+
+      <div class="i2i-col s4 i2i-justify">
+        <h4>Store</h4>
+        <p><i class="fa fa-fw fa-map-marker"></i> Company Name</p>
+        <p><i class="fa fa-fw fa-phone"></i> 0044123123</p>
+        <p><i class="fa fa-fw fa-envelope"></i> ex@mail.com</p>
+        <h4>We accept</h4>
+        <p><i class="fa fa-fw fa-cc-amex"></i> Amex</p>
+        <p><i class="fa fa-fw fa-credit-card"></i> Credit Card</p>
+        <br>
+        <i class="fa fa-facebook-official i2i-hover-opacity i2i-large"></i>
+        <i class="fa fa-instagram i2i-hover-opacity i2i-large"></i>
+        <i class="fa fa-snapchat i2i-hover-opacity i2i-large"></i>
+        <i class="fa fa-pinterest-p i2i-hover-opacity i2i-large"></i>
+        <i class="fa fa-twitter i2i-hover-opacity i2i-large"></i>
+        <i class="fa fa-linkedin i2i-hover-opacity i2i-large"></i>
+      </div>
+    </div>
+  </footer>
+
+  <div class="i2i-black i2i-center i2i-padding-24">Powered by i2i.css </div>
+
+  <!-- End page content -->
+</div>
+
+<!-- Newsletter Modal -->
+<div id="newsletter" class="i2i-modal">
+  <div class="i2i-modal-content i2i-animate-zoom" style="padding:32px">
+    <div class="i2i-container i2i-white i2i-center">
+      <i onclick="document.getElementById('newsletter').style.display='none'" class="fa fa-remove i2i-right i2i-button i2i-transparent i2i-xxlarge"></i>
+      <h2 class="i2i-wide">NEWSLETTER</h2>
+      <p>Join our mailing list to receive updates on new arrivals and special offers.</p>
+      <p><input class="i2i-input i2i-border" type="text" placeholder="Enter e-mail"></p>
+      <button type="button" class="i2i-button i2i-padding-large i2i-red i2i-margin-bottom" onclick="document.getElementById('newsletter').style.display='none'">Subscribe</button>
+    </div>
+  </div>
+</div>
+
+<script>
+// Accordion 
+function myAccFunc() {
+  var x = document.getElementById("demoAcc");
+  if (x.className.indexOf("i2i-show") == -1) {
+    x.className += " i2i-show";
+  } else {
+    x.className = x.className.replace(" i2i-show", "");
+  }
+}
+
+// Click on the "Jeans" link on page load to open the accordion for demo purposes
+document.getElementById("myBtn").click();
+
+
+// Open and close sidebar
+function i2i_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function i2i_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+</script>
+
+</body>
+</html>

@@ -6,3 +6,4 @@ Additionally, a professional website builds credibility and trust, showcasing te
 
 Furthermore, a robust web presence provides a competitive edge and allows the startup to scale and adapt to new trends seamlessly. Collecting and analyzing data through the website enables informed decision-making and enhances customer experience, making web development an indispensable tool for startup success.
 
+This repository provides certain templates that can be useful in creating your own custom website the way you like it. 

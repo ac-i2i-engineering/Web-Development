@@ -47,4 +47,4 @@ python manage.py migrate
 python manage.py runserver
 ```
 
-The app will run on your local host. Next, we will get into django models, which allow you to create and use databases.
+The app will run on your local host. Visit the other repositories to learn how to use databases, build sophisticated web apps, and much more!

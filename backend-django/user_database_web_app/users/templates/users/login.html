@@ -2,18 +2,40 @@
 <html>
 <head>
     <title>Login</title>
+    <style>
+        .navbar {
+            overflow: hidden;
+            background-color: #333;
+        }
+
+        .navbar a {
+            float: left;
+            display: block;
+            color: #f2f2f2;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        .navbar a:hover {
+            background-color: #ddd;
+            color: black;
+        }
+    </style>
 </head>
 <body>
+    <div class="navbar">
+        <a href="/">Home</a>
+        <a href="/register">Register</a>
+        <a href="/login">Login</a>
+    </div>
+    <h2>Login</h2>
 
-<h2>Login</h2>
-
-<form action="/submit_login" method="post">
-    <label for="username">Username:</label><br>
-    <input type="text" id="username" name="username"><br>
-    <label for="password">Password:</label><br>
-    <input type="password" id="password" name="password"><br>
-    <input type="submit" value="Submit">
-</form>
-
+    <!-- login.html -->
+    <form method="post" action="{% url 'login' %}">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Login</button>
+    </form>
 </body>
 </html>

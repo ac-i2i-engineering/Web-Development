@@ -1,5 +1,12 @@
 from django.shortcuts import render, redirect
 from django.contrib.auth import authenticate, login
+
+'''
+
+Here we import the django user model for our user database.
+
+'''
+
 from django.contrib.auth.forms import AuthenticationForm
 from django.contrib.auth.models import User
 
@@ -7,7 +14,7 @@ from django.contrib.auth.models import User
 def index(request):
     return render(request, 'users/index.html')
 
-# Base User Registration View
+# User Registration View
 def register_view(request):
     if request.method == 'POST':
         username = request.POST.get('username')
@@ -28,7 +35,7 @@ def register_view(request):
                 return redirect('index')  # Redirect to the URL name 'index'
     return render(request, 'users/register.html')
 
-# Base User Login View
+# User Login View
 def login_view(request):
     if request.method == 'POST':
         form = AuthenticationForm(data=request.POST)

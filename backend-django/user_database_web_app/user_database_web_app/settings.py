@@ -23,13 +23,25 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-@7a52(wykv1gb+6986v7ag++da4ghr%19lybqxx*6932b2af%#'
 
 # SECURITY WARNING: don't run with debug turned on in production!
+
+'''
+
+Make sure that APPEND_SLASH is set to True.
+
+'''
 DEBUG = True
-APPEND_SLASH = False
+APPEND_SLASH = True
 
 ALLOWED_HOSTS = []
 
 
 # Application definition
+
+'''
+
+Make sure to add your app in INSTALLED_APPS
+
+'''
 
 INSTALLED_APPS = [
     'django.contrib.admin',

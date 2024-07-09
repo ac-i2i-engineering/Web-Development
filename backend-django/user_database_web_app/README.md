@@ -20,3 +20,6 @@ Django automatically connects the app to a sqlite database that can be found at 
 
 ### Reminders
 Add your app in the INSTALLED_APPS at [settings.py](user_database_web_app/settings.py) and add your app urls to the project level [urls.py](user_database_web_app/urls.py).
+
+### Deploying your app
+To see the deployment of this app, click [here](https://liamjdavis.pythonanywhere.com/login/). Python Anywhere has a free tier that will host your app. To host your app, navigate [here](https://www.pythonanywhere.com/user/liamjdavis/), make an account, then follow [these](https://help.pythonanywhere.com/pages/DeployExistingDjangoProject/) instructions. Contact us with any issues you might have.

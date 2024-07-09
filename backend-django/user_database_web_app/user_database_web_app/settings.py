@@ -32,6 +32,13 @@ Make sure that APPEND_SLASH is set to True.
 DEBUG = True
 APPEND_SLASH = True
 
+
+'''
+
+When deploying in Python Anywhere, make sure to add your custom server to ALLOWED_HOSTS
+
+'''
+
 ALLOWED_HOSTS = []
 
 

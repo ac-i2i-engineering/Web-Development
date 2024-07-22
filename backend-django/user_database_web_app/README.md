@@ -14,7 +14,7 @@ python manage.py runserver
 ```
 
 ### App Structure
-The frontend html is stored in the [templates](users/templates/users/index.html) folder. These are connected to [views.py](users/views.py), which will import the django user model and connect it to the login and registration forms in html. The views for each page are then given urls in [urls.py](users/urls.py). 
+The frontend html is stored in the [templates](users/templates/users/index.html) folder. These are connected to [views.py](users/views.py), which will import the django user model and connect it to the login and registration forms in html. Each user has their login information saved in [this excel sheet](users/data/user_data.xlsx) and sent to an imaginary email. The views for each page are then given urls in [urls.py](users/urls.py). 
 
 Django automatically connects the app to a sqlite database that can be found at [db.sqlite3](db.sqlite3).
 
